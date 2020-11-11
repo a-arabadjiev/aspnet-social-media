@@ -3,12 +3,11 @@
     using System;
     using System.Threading.Tasks;
 
+    using Microsoft.AspNetCore.Mvc;
     using MySocialMediaApp.Data.Common.Repositories;
     using MySocialMediaApp.Data.Models;
     using MySocialMediaApp.Services.Data;
     using MySocialMediaApp.Web.ViewModels.Settings;
-
-    using Microsoft.AspNetCore.Mvc;
 
     public class SettingsController : BaseController
     {

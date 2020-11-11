@@ -3,9 +3,8 @@
     using System;
     using System.Threading.Tasks;
 
-    using MySocialMediaApp.Data.Common;
-
     using Microsoft.EntityFrameworkCore;
+    using MySocialMediaApp.Data.Common;
 
     public class DbQueryRunner : IDbQueryRunner
     {

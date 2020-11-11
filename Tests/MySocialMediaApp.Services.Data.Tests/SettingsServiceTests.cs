@@ -4,15 +4,12 @@
     using System.Linq;
     using System.Threading.Tasks;
 
+    using Microsoft.EntityFrameworkCore;
+    using Moq;
     using MySocialMediaApp.Data;
     using MySocialMediaApp.Data.Common.Repositories;
     using MySocialMediaApp.Data.Models;
     using MySocialMediaApp.Data.Repositories;
-
-    using Microsoft.EntityFrameworkCore;
-
-    using Moq;
-
     using Xunit;
 
     public class SettingsServiceTests

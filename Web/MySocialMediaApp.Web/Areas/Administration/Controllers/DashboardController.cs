@@ -1,9 +1,8 @@
 ﻿namespace MySocialMediaApp.Web.Areas.Administration.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
     using MySocialMediaApp.Services.Data;
     using MySocialMediaApp.Web.ViewModels.Administration.Dashboard;
-
-    using Microsoft.AspNetCore.Mvc;
 
     public class DashboardController : AdministrationController
     {

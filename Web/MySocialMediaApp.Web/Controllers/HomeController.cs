@@ -2,9 +2,8 @@
 {
     using System.Diagnostics;
 
-    using MySocialMediaApp.Web.ViewModels;
-
     using Microsoft.AspNetCore.Mvc;
+    using MySocialMediaApp.Web.ViewModels;
 
     public class HomeController : BaseController
     {

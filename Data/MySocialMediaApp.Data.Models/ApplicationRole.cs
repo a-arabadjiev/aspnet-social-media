@@ -3,9 +3,8 @@ namespace MySocialMediaApp.Data.Models
 {
     using System;
 
-    using MySocialMediaApp.Data.Common.Models;
-
     using Microsoft.AspNetCore.Identity;
+    using MySocialMediaApp.Data.Common.Models;
 
     public class ApplicationRole : IdentityRole, IAuditInfo, IDeletableEntity
     {

@@ -4,9 +4,8 @@ namespace MySocialMediaApp.Data.Models
     using System;
     using System.Collections.Generic;
 
-    using MySocialMediaApp.Data.Common.Models;
-
     using Microsoft.AspNetCore.Identity;
+    using MySocialMediaApp.Data.Common.Models;
 
     public class ApplicationUser : IdentityUser, IAuditInfo, IDeletableEntity
     {

@@ -2,9 +2,8 @@
 {
     using System.Linq;
 
-    using MySocialMediaApp.Data.Common.Models;
-
     using Microsoft.EntityFrameworkCore;
+    using MySocialMediaApp.Data.Common.Models;
 
     internal static class EntityIndexesConfiguration
     {

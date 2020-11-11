@@ -5,6 +5,11 @@
     using System.IO;
     using System.Threading.Tasks;
 
+    using CommandLine;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Logging;
     using MySocialMediaApp.Data;
     using MySocialMediaApp.Data.Common;
     using MySocialMediaApp.Data.Common.Repositories;
@@ -13,13 +18,6 @@
     using MySocialMediaApp.Data.Seeding;
     using MySocialMediaApp.Services.Data;
     using MySocialMediaApp.Services.Messaging;
-
-    using CommandLine;
-
-    using Microsoft.EntityFrameworkCore;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Logging;
 
     public static class Program
     {
