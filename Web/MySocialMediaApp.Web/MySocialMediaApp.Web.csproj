@@ -36,4 +36,8 @@
     <ProjectReference Include="..\MySocialMediaApp.Web.Infrastructure\MySocialMediaApp.Web.Infrastructure.csproj" />
     <ProjectReference Include="..\MySocialMediaApp.Web.ViewModels\MySocialMediaApp.Web.ViewModels.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Posts\" />
+  </ItemGroup>
 </Project>
