@@ -16,7 +16,6 @@
     using MySocialMediaApp.Data.Models;
     using MySocialMediaApp.Data.Repositories;
     using MySocialMediaApp.Data.Seeding;
-    using MySocialMediaApp.Services.Data;
     using MySocialMediaApp.Services.Mapping;
     using MySocialMediaApp.Services.Messaging;
     using MySocialMediaApp.Web.ViewModels;
@@ -62,7 +61,6 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
-            services.AddTransient<ISettingsService, SettingsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

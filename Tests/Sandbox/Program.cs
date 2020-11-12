@@ -16,7 +16,6 @@
     using MySocialMediaApp.Data.Models;
     using MySocialMediaApp.Data.Repositories;
     using MySocialMediaApp.Data.Seeding;
-    using MySocialMediaApp.Services.Data;
     using MySocialMediaApp.Services.Messaging;
 
     public static class Program
@@ -50,9 +49,7 @@
         {
             var sw = Stopwatch.StartNew();
 
-            var settingsService = serviceProvider.GetService<ISettingsService>();
-            Console.WriteLine($"Count of settings: {settingsService.GetCount()}");
-
+            // Console.WriteLine($"Count of settings: {settingsService.GetCount()}");
             Console.WriteLine(sw.Elapsed);
             return await Task.FromResult(0);
         }
@@ -79,7 +76,6 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
-            services.AddTransient<ISettingsService, SettingsService>();
         }
     }
 }
