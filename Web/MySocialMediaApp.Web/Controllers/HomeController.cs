@@ -4,27 +4,24 @@
     using System.Linq;
     using Microsoft.AspNetCore.Mvc;
     using MySocialMediaApp.Data;
+    using MySocialMediaApp.Data.Common.Repositories;
+    using MySocialMediaApp.Data.Models;
+    using MySocialMediaApp.Services.Data;
     using MySocialMediaApp.Web.ViewModels;
     using MySocialMediaApp.Web.ViewModels.Home;
 
     public class HomeController : BaseController
     {
-        private readonly ApplicationDbContext db;
+        private readonly IGetCountsService countsService;
 
-        public HomeController(ApplicationDbContext db)
+        public HomeController(IGetCountsService countsService)
         {
-            this.db = db;
+            this.countsService = countsService;
         }
 
         public IActionResult Index()
         {
-            var viewModel = new IndexViewModel
-            {
-                UsersCount = this.db.Users.Count(),
-                PostsCount = this.db.Posts.Count(),
-                ImagesCount = this.db.Images.Count(),
-            };
-
+            var viewModel = this.countsService.GetCounts();
             return this.View(viewModel);
         }
 

@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\MySocialMediaApp.Data.Common\MySocialMediaApp.Data.Common.csproj" />
     <ProjectReference Include="..\..\Data\MySocialMediaApp.Data.Models\MySocialMediaApp.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Web\MySocialMediaApp.Web.ViewModels\MySocialMediaApp.Web.ViewModels.csproj" />
     <ProjectReference Include="..\MySocialMediaApp.Services.Mapping\MySocialMediaApp.Services.Mapping.csproj" />
   </ItemGroup>
 
