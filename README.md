@@ -1,2 +1,2 @@
 # aspnet-social-media
-Repository for my first ASP.Net Project
+My defense project for ASP.NET Core MVC course at SoftUni (October-December(2020).
