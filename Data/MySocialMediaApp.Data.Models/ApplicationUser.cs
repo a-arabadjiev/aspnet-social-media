@@ -3,9 +3,11 @@ namespace MySocialMediaApp.Data.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
 
     using Microsoft.AspNetCore.Identity;
     using MySocialMediaApp.Data.Common.Models;
+    using MySocialMediaApp.Data.Models.Enums;
 
     public class ApplicationUser : IdentityUser, IAuditInfo, IDeletableEntity
     {
@@ -35,6 +37,18 @@ namespace MySocialMediaApp.Data.Models
         public virtual ICollection<IdentityUserClaim<string>> Claims { get; set; }
 
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
+
+        [Required]
+        [MaxLength(30)]
+        public string FirstName { get; set; }
+
+        [Required]
+        [MaxLength(30)]
+        public string LastName { get; set; }
+
+        public DateTime DateOfBirth { get; set; }
+
+        public Gender Gender { get; set; }
 
         public virtual ICollection<Post> Posts { get; set; }
 
