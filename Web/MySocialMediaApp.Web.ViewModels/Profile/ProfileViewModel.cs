@@ -1,8 +1,9 @@
-﻿using MySocialMediaApp.Web.ViewModels.Posts;
-using System.Collections.Generic;
-
-namespace MySocialMediaApp.Web.ViewModels.Profile
+﻿namespace MySocialMediaApp.Web.ViewModels.Profile
 {
+    using System.Collections.Generic;
+
+    using MySocialMediaApp.Web.ViewModels.Posts;
+
     public class ProfileViewModel
     {
         public string Username { get; set; }

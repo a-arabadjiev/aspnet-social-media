@@ -15,8 +15,6 @@
             {
                 return;
             }
-
-            //dbContext.Posts.Add(new Post { Content = "Random post" , })
         }
     }
 }

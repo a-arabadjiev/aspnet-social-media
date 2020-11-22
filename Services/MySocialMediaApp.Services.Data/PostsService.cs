@@ -2,9 +2,9 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-    using System.Linq;
 
     using MySocialMediaApp.Data.Common.Repositories;
     using MySocialMediaApp.Data.Models;
@@ -25,7 +25,9 @@
 
         public async Task Create(CreatePostInputModel input, string userName)
         {
-            string userId = this.usersRepository.AllAsNoTracking().FirstOrDefault(u => u.UserName == userName).Id;
+            //TODO
+
+            string userId = "asd";
 
             var post = new Post
             {

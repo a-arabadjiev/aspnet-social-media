@@ -1,13 +1,14 @@
-﻿using MySocialMediaApp.Data.Common.Repositories;
-using MySocialMediaApp.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using System.Linq;
-
-namespace MySocialMediaApp.Services.Data
+﻿namespace MySocialMediaApp.Services.Data
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    using MySocialMediaApp.Data.Common.Repositories;
+    using MySocialMediaApp.Data.Models;
+
     public class ProfilesService : IProfilesService
     {
         private readonly IDeletableEntityRepository<ApplicationUser> usersRepository;

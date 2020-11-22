@@ -14,8 +14,8 @@
     public sealed class SeleniumServerFactory<TStartup> : WebApplicationFactory<TStartup>
         where TStartup : class
     {
-        private readonly Process process;
         private IWebHost host;
+        private readonly Process process;
 
         public SeleniumServerFactory()
         {
