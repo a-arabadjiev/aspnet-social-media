@@ -3,6 +3,7 @@
     using System.Diagnostics;
     using System.Security.Claims;
     using System.Threading.Tasks;
+
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
@@ -35,10 +36,10 @@
                 return this.View();
             }
 
-            // TODO: Get User Id from controller
-            string currentUserName = this.User.Identity.Name;
+            string userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            input.CreatedByUserId = userId;
 
-            await this.postsService.Create(input, currentUserName);
+            await this.postsService.Create(input);
 
             return this.Redirect("/");
         }

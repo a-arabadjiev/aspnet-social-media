@@ -6,6 +6,6 @@
 
     public interface IPostsService
     {
-        Task Create(CreatePostInputModel input, string userName);
+        Task Create(CreatePostInputModel input);
     }
 }

@@ -23,16 +23,12 @@
             this.usersRepository = usersRepository;
         }
 
-        public async Task Create(CreatePostInputModel input, string userName)
+        public async Task Create(CreatePostInputModel input)
         {
-            //TODO
-
-            string userId = "asd";
-
             var post = new Post
             {
                 Content = input.Content,
-                CreatedByUserId = userId,
+                CreatedByUserId = input.CreatedByUserId,
             };
 
             await this.postsRepository.AddAsync(post);
