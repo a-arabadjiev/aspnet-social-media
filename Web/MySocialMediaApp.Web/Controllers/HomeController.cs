@@ -2,6 +2,8 @@
 {
     using System.Diagnostics;
     using System.Linq;
+    using System.Security.Claims;
+
     using Microsoft.AspNetCore.Mvc;
     using MySocialMediaApp.Data;
     using MySocialMediaApp.Data.Common.Repositories;
@@ -22,6 +24,7 @@
         public IActionResult Index()
         {
             var viewModel = this.countsService.GetCounts();
+            viewModel.UserId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
             return this.View(viewModel);
         }
 
